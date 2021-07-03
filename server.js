@@ -47,8 +47,4 @@ server.get('/tags', (req, res) => {
 
 server.use(router);
 
-server.listen(process.env.PORT || 3004, () => {
-  console.log('JSON Server is running');
-});
-
 module.exports.handler = serverless(server);
