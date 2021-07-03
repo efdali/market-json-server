@@ -1,5 +1,4 @@
 const jsonServer = require('json-server');
-const serverless = require('serverless-http');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const data = require('./db.json');
@@ -47,4 +46,6 @@ server.get('/tags', (req, res) => {
 
 server.use(router);
 
-module.exports.handler = serverless(server);
+server.listen(process.env.PORT || 3004, () => {
+  console.log('JSON Server is running');
+});

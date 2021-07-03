@@ -1,5 +1,5 @@
 {
-  "name": "getir-json-server",
+  "name": "market-json-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,8 +13,5 @@
   "devDependencies": {
     "json-server": "^0.16.3",
     "nodemon": "^2.0.9"
-  },
-  "dependencies": {
-    "serverless-http": "^2.7.0"
   }
 }
